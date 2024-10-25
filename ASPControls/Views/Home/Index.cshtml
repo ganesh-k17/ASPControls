@@ -1,0 +1,38 @@
+﻿@model ProductViewModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1 class="display-4">Dropdown samples</h1>
+    <div></div>
+
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Choose student (loading from list of string)</label>
+            @Html.DropDownListFor(model => model.selectedStudent, new SelectList(Model.Students), "Choose Category", new { @class = "form-select"})
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Choose Categories by loading Enum values to SelectList</label>
+            @Html.DropDownListFor(model => model.CategoryId, Model.Categories, "Choose Category", new { @class = "form-select"})
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Choose Categories by loading Enum directly</label>
+            @Html.DropDownListFor(model=> model.Category, new SelectList(Enum.GetValues(typeof(Category))), "Choose Category", new { @class = "form-select"})
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Choose Language (Loading list of objects)</label>
+            @Html.DropDownListFor(model => model.SelectedLanguageCode, new SelectList( Model.Languages, "code", "Name"), "Select Languages", new { @class = "form-select"})
+        </div>
+    </div>
+</div>

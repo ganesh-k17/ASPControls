@@ -1,0 +1,75 @@
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and database files
+*.log
+*.ldf
+*.mdf
+
+# Web specific files
+wwwroot/node_modules/
+wwwroot/lib/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Compiled DLLs and PDBs
+*.dll
+*.pdb
+*.exe
+*.ilk
+*.lib
+*.ndk
+*.map
+*.so
+*.dylib
+*.o
+*.a
+
+# Azure
+.vscode/
+.vs/
+.venv/
+.azure/
+*.azcli
+
+# Rider and JetBrains
+.idea/
+*.sln.iml
+.idea/*
+
+# Recycle Bin used by IIS
+$RECYCLE.BIN/
+
+# Resharper
+_ReSharper/
+*.DotSettings.user
+_UpgradeReport_Files/
+
+# NCrunch
+_NCrunch_*
+
+# Mac files
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+
+# Rider and Rider projects
+.idea/
+*.sln.iml
+
+# Other files
+*.config.user
